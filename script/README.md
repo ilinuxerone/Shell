@@ -1,7 +1,16 @@
-shell-work
-==========
+我在linux tools下积累的常用工具
 
-shell常用分析命令和脚本
+Java线程过高问题排查
+```
+curl -sLk "https://raw.github.com/oldmanpushcart/unixtools/master/javatop.sh" | ksh -s 5 `pgrep -u admin java`
+```
+
+Java Dump脚本
+```
+/usr/bin/jmap -dump:live,format=b,file=heap-`date +%Y%m%d%H%M`.bin `pgrep -u admin java`
+```
+
+常用分析命令和脚本
   
 ##mysql监控脚本
 
@@ -15,4 +24,6 @@ shell常用分析命令和脚本
 
 ##process 进程管理
 
- 
+linux tools
+=========
+
